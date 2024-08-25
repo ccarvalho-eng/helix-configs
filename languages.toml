@@ -1,0 +1,13 @@
+[[language]]
+name = "elixir"
+scope = "source.elixir"
+injection-regex = "(elixir|ex)"
+shebangs = ["elixir"]
+file-types = ["ex", "exs"]
+roots = ["mix.exs", "mix.lock"]
+auto-format = true
+diagnostic-severity = "Hint"
+comment-token = "#"
+indent = {tab-width = 2, unit = " "}
+language-servers = [ "elixir-ls" ]
+
