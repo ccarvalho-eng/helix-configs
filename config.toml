@@ -18,7 +18,9 @@ display-messages = true
 display-inlay-hints = true
 
 [keys.normal]
-S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+# Move lines up and down
 S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+# Open Lazygit in a popup window
 C-g = ":sh tmux new-session -d \\; popup -d \"#{pane_current_path}\" -xC -yC -w80% -h80% -E lazygit"
 
