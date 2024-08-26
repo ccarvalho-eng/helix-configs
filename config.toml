@@ -22,8 +22,9 @@ display-inlay-hints = true
 S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 # Open Lazygit in a popup window
-# To start tmux with iTerm2:
-# iTerm2 > Preferences > Profiles > General > Command > Send text at start
+# Configure tmux to start with iTerm2:
+# In iTerm2, navigate to Preferences > Profiles > General > Command
+# Set 'Send text at start' to:
 # `tmux ls && read tmux_session && tmux attach -t ${tmux_session:-default} || tmux new -s ${tmux_session:-default}`
 C-g = ":sh tmux new-session -d \\; popup -d \"#{pane_current_path}\" -xC -yC -w80% -h80% -E lazygit"
 
