@@ -11,3 +11,7 @@ comment-token = "#"
 indent = {tab-width = 2, unit = " "}
 language-servers = [ "elixir-ls" ]
 
+[[language]]
+name = "markdown"
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}
+
