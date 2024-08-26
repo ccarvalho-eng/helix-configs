@@ -12,47 +12,38 @@ rustup update
 ### Language Support
 
 To enhance your development experience in Helix, install the following language servers and tools:
-#### Elixir
+1. #### Elixir
+    To install Elixir, use the asdf version manager. Replace <version> with the specific version you need:
+    ```bash
+    asdf install elixir <version>
+    ```
+2. #### Markdown
 
-To install Elixir, use the asdf version manager. Replace <version> with the specific version you need:
-
-```bash
-asdf install elixir <version>
-```
-
-#### Markdown
-
-For Markdown support in Helix, you will need the following tools:
-
-markdown-oxide: A lightweight Markdown parser and formatter. Install it using Cargo:
-
-```bash
-cargo install --locked --git https://github.com/Feel-ix-343/markdown-oxide.git markdown-oxide
-```
-
-dprint: A code formatter that supports various languages, including Markdown. Install it using Homebrew:
-
-```bash
-brew install dprint
-```
+    For Markdown support in Helix, you will need the following tools:
+    
+    1. **markdown-oxide**: A lightweight Markdown parser and formatter. Install it using Cargo:
+        ```bash
+        cargo install --locked --git https://github.com/Feel-ix-343/markdown-oxide.git markdown-oxide
+        ```
+    2. **dprint**: A code formatter that supports various languages, including Markdown. Install it using Homebrew:
+        ```bash
+        brew install dprint
+        ```
 
 ### Utilities
 
 These utilities can improve your workflow within the Helix editor:
 
-Tmux: A terminal multiplexer that allows you to run multiple terminal sessions in a single window. Install Tmux via Homebrew:
+1. **Tmux**: A terminal multiplexer that allows you to run multiple terminal sessions in a single window. Install Tmux via Homebrew:
+    ```bash
+    brew install tmux
+    ```
+2. **LazyGit**: A simple terminal UI for Git commands. Install LazyGit using Homebrew:
+    ```bash
+    brew install lazygit
+    ```
 
-```bash
-brew install tmux
-```
-
-LazyGit: A simple terminal UI for Git commands. Install LazyGit using Homebrew:
-
-```bash
-brew install lazygit
-```
-
-Environment Variables
+### Environment Variables
 
 To ensure all installed tools are accessible from the command line, add the following environment variables to your shell configuration file (e.g., ~/.zshrc or ~/.bashrc):
 
