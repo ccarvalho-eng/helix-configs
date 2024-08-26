@@ -36,7 +36,7 @@ dprint: A code formatter that supports various languages, including Markdown. In
 brew install dprint
 ```
 
-Utilities
+### Utilities
 
 These utilities can improve your workflow within the Helix editor:
 
