@@ -28,4 +28,4 @@ C-t = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w60% -h60% -E zsh"
 # Open iEx in a popup
 C-x = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w60% -h60% -E iex"
 # Open psql in a popup
-C-p = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w60% -h60% -E pgcli"
+C-q = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w60% -h60% -E pgcli"

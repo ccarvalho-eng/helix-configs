@@ -42,6 +42,10 @@ These utilities can improve your workflow within the Helix editor:
     ```bash
     brew install lazygit
     ```
+3. **pgcli**: A a command-line interface for PostgreSQL that offers auto-completion and syntax highlighting, making it easier to write and execute SQL queries interactively:
+   ```bash
+   brew install pgcli
+   ```
 
 ### Environment Variables
 
