@@ -24,5 +24,8 @@ S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 # Open Lazygit in a popup
 C-g = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w80% -h80% -E lazygit"
 # Open a new terminal in a popup
-C-t = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w65% -h65% -E zsh"
-
+C-t = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w60% -h60% -E zsh"
+# Open iEx in a popup
+C-x = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w60% -h60% -E iex"
+# Open psql in a popup
+C-p = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w60% -h60% -E pgcli"
