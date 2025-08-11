@@ -1,31 +1,23 @@
-theme = "catppuccin_frappe"
+theme = "onedark"
 
 [editor]
 line-number = "relative"
-scroll-lines = 1
-mouse = false
+auto-completion = true
+auto-format = true
+auto-save = true
+mouse = true
+
+[editor.lsp]
+enable = true
+display-messages = true
+auto-signature-help = true
+display-inlay-hints = true
+snippets = true
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
 
-[editor.file-picker]
-hidden = true 
-
-[editor.lsp]
-display-messages = true
-display-inlay-hints = true
-
-[keys.normal]
-# Move lines up and down
-S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
-S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
-# Open Lazygit in a popup
-C-g = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w80% -h80% -E lazygit"
-# Open a new terminal in a popup
-C-t = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w60% -h60% -E zsh"
-# Open iEx in a popup
-C-x = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w60% -h60% -E iex"
-# Open psql in a popup
-C-q = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w60% -h60% -E pgcli"
+[editor.indent-guides]
+render = true
