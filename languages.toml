@@ -1,18 +1,28 @@
+# Language servers configuration
+[language-server.elixir-ls]
+command = "elixir-ls"
+
+# Language configurations
 [[language]]
 name = "elixir"
 scope = "source.elixir"
 injection-regex = "(elixir|ex)"
 shebangs = ["elixir"]
 file-types = ["ex", "exs"]
+formatter = { command = "mix", args = ["format", "-"] }
 roots = ["mix.exs", "mix.lock"]
 auto-format = true
 diagnostic-severity = "Hint"
 comment-token = "#"
-indent = {tab-width = 2, unit = " "}
-language-servers = [ "elixir-ls" ]
+indent = { tab-width = 2, unit = " " }
+language-servers = ["elixir-ls"]
+
+[[language]]
+name = "heex"
+indent = { tab-width = 2, unit = "  " }
+formatter = { command = "mix", args = ["format", "-"] }
 
 [[language]]
 name = "markdown"
 auto-format = true
-formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}
-
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
